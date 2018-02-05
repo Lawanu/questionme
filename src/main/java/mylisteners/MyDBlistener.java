@@ -37,9 +37,9 @@ public class MyDBlistener implements ServletContextListener {
     System.out.println("Database Check!!");
 	Connection con=null;
 try{
-	String url="jdbc:mysql://localhost:3306/LetsQuo";
-	String user="root";
-	String password="";
+	String url="jdbc:mysql://mysql:3306/LetsQuo";
+	String user="user";
+	String password="password";
 	Class.forName("com.mysql.jdbc.Driver").newInstance();
 	con=DriverManager.getConnection(url,user,password);
 	System.out.println("Got Connection");

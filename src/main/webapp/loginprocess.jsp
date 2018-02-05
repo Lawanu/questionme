@@ -12,8 +12,8 @@ boolean status=false;
 try{
 	String subject= request.getParameter("subject");
 	String url="jdbc:mysql://mysql:3306/LetsQuo";
-    String user="user";
-    String password="password";
+	String user="user";
+	String password="password";
 	Class.forName("com.mysql.jdbc.Driver").newInstance();
 	Connection con=DriverManager.getConnection(url,user,password);
 PreparedStatement ps=con.prepareStatement("select * from QUIZREGISTER where username=? and userpass=? ");
